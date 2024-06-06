@@ -1,0 +1,65 @@
+Data types are fundamental building blocks in Python programming. They define the type of value a variable can hold and the operations that can be performed on that value. Understanding data types is essential for writing effective and efficient Python code.
+
+
+
+Numeric Types:
+
+1. int (integer): Represents whole numbers, positive, negative, or zero. (42, -100, 0)
+
+2. float (floating-point): Represents numbers with decimals. (3.14, -9.25e+2)
+
+3. complex: Represents complex numbers with a real and imaginary part. ( 3+5j, 1j)
+
+
+
+String Type:
+
+4. str: Represents sequences of characters. Used for text data. ("Hello, world!", 'Python')
+
+
+Collection Types:
+
+5. list: An ordered, changeable collection of items. Elements can be of different data types. ([1, "apple", 3.4])
+
+6. tuple: An ordered, immutable collection of items. Elements can be of different data types. ((2, "banana", True))
+
+7. set: An unordered collection of unique items. ({1, "orange", "orange"})
+
+8. dictionary (dict): An unordered collection of key-value pairs. Keys are unique and immutable, while values can be any data type. ({"name": "Alice", "age": 30})
+
+
+
+Other Built-in Types:
+
+9. bool (boolean): Represents logical values: True or False.
+
+10. bytes: Represents a sequence of bytes (used for binary data).
+
+11. bytearray: A mutable version of bytes.
+
+12. None: Represents the absence of a value.
+
+
+
+======================================================================
+
+Explanation:
+
+input("What is your name? "): This line uses the input() function. Inside the parentheses, you can provide a message (prompt) that will be displayed to the user asking for their input. In this case, it asks "What is your name? ".
+
+name = ...: The user's input is stored in the variable you specify. Here, we're using name to store the entered name.
+
+print(f"Hello, {name}!"): This line uses an f-string (formatted string literal) to greet the user by name. The f"..." allows you to embed variables directly within the string using curly braces {}. In this case, {name} will be replaced with the value stored in the name variable.
+
+Important Note:
+
+The input() function always returns the user's input as a string, even if they enter a number. If you need to work with numerical data, you'll need to convert the input to the appropriate data type (e.g., integer or float) using conversion functions like int() or float().
+
+Here's an example of how to handle numerical input:
+
+Python
+age = int(input("How old are you? "))
+print(f"You are {age} years old.")
+Use code with caution.
+content_copy
+This code converts the user's input (which will be a string) to an integer using int() before using it in calculations or printing.
